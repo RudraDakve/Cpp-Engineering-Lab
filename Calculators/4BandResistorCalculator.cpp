@@ -65,11 +65,11 @@ int main(){
     double resistance = ((digit1 * 10) + digit2) * multiplier; // Formula for resistance calculation
     cout << "The calculated resistance is: ";
     if(resistance >= 1000000){
-        cout << resistance / 1000000 << "Mega ohms" << endl;
+        cout << resistance / 1000000 << " Mega ohms" << endl;
     }else if(resistance >= 1000){
-        cout << resistance / 1000 << "Kilo ohms" << endl;
+        cout << resistance / 1000 << " Kilo ohms" << endl;
     }else{
-        cout << resistance << "ohms" << endl;
+        cout << resistance << " ohms" << endl;
     }
     return 0;
 };

@@ -2,6 +2,7 @@
 #include <iomanip>
 using namespace std;
 
+// Function to Calculate Resistance in Series.
 double calculateSeriesResistance(int n){
     double totalR = 0.0;
     double currentR = 0.0;
@@ -13,6 +14,8 @@ double calculateSeriesResistance(int n){
     }
     return totalR;
 }
+
+// Function to Calculate Resistance in Parallel.
 double calculateParallelResistance(int n){
     double inverseSum = 0.0;
     double currentR = 0.0;

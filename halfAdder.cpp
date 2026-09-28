@@ -11,6 +11,7 @@ bool XOR_gate(bool a, bool b){
     return a != b;
 };
 
+// Function for Half Adder.
 void halfAdder(){
     bool A, B;
     cout << " Welcome to the Half Adder Simulator" << endl;
@@ -26,6 +27,7 @@ void halfAdder(){
     return;
 };
 
+// Function for Full Adder.
 void fullAdder(){
     bool A, B, Cin;
     cout << "Welcome to the Full Adder Simulator" << endl;
@@ -52,9 +54,10 @@ int main(){
     cout << "2. Full Adder" << endl;
     cout << "3. Exit" << endl;
     int choice;
-    cin >> choice;
     do{
     switch(choice){
+        cout << "Enter your choice of code: " << endl;
+        cin >> choice
         case 1:
             halfAdder();
             break;

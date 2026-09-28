@@ -6,11 +6,14 @@
 #include <iomanip>
 using namespace std;
 
+
+// Carries information about the resistor value.
 struct BandData{
     int digit;
     double multiplier;
 };
 int main(){
+    // Holds the value of diferent color code.
     unordered_map<string, BandData> colourMap = {
         {"black", {0, 1}},
         {"brown", {1, 10}},
@@ -25,6 +28,7 @@ int main(){
         {"gold", {-1, 0.1}},
         {"silver", {-1, 0.01}}
     };
+    // Holds the value of different color tolerances.
     unordered_map<string, double> toleranceMap = {
         {"brown", 0.01},
         {"red", 0.02},
@@ -58,7 +62,7 @@ int main(){
         cout << "Invalid, gold and silver cannot be used for the first two bands." << endl;
         return 1;
     }
-    double resistance = ((digit1 * 10) + digit2) * multiplier;
+    double resistance = ((digit1 * 10) + digit2) * multiplier; // Formula for resistance calculation
     cout << "The calculated resistance is: ";
     if(resistance >= 1000000){
         cout << resistance / 1000000 << "Mega ohms" << endl;

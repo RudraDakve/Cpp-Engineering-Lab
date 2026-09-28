@@ -17,7 +17,7 @@ int main(){
     5 - for NOR
     6 - for XOR" << endl;
     cin >> choice;
-    if((input1 != 0 && input1 != 1) && (input2 != 0 && input2 != 1)){
+    if((input1 != 0 && input1 != 1) || (input2 != 0 && input2 != 1)){
         cout << "Error! : Invalid inputs entered!" << endl;
         return 0;
     }

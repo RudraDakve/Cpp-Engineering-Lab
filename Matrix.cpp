@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Function to print a Matrix.
 void printMatrix(const vector<vector<double>>& matrix){
     for(int i = 0; i < 3; i++){
         cout << "[ ";
@@ -23,6 +24,7 @@ void inputMatrix(vector<vector<double>>&matrix, char name){
     }
 };
 
+// Function to Add 2 Matrices.
 void addMatrix(){
     vector<vector<double>> A(3, vector<double>(3));
     vector<vector<double>> B(3, vector<double>(3));
@@ -40,6 +42,7 @@ void addMatrix(){
     printMatrix(C);
 };
 
+// Functioon to Subtract 2 Matrices.
 void subtractMatrix(){
     vector<vector<double>> A(3, vector<double>(3));
     vector<vector<double>> B(3, vector<double>(3));
@@ -57,6 +60,8 @@ void subtractMatrix(){
     printMatrix(C);
 };
 
+
+// Function to Multipy 2 Matrices.
 void multiplyMatrix(){
     vector<vector<double>> A(3, vector<double>(3));
     vector<vector<double>> B(3, vector<double>(3));
@@ -76,6 +81,7 @@ void multiplyMatrix(){
     printMatrix(C);
 };
 
+// Function to Calculate Derterminant of a Matrix.
 void calculateDeterminant(){
     vector<vector<double>> A(3, vector<double>(3));
     inputMatrix(A, 'A');

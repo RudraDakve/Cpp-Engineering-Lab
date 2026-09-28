@@ -19,7 +19,7 @@ int main(){
         cout << "Error! : Voltage cannot be zero! (leading to no flow of current, meaning no resistance)" <<endl;
         return 0;
     }
-    resistance = voltage / current;
+    resistance = voltage / current; // Standard Ohms Law.
     if(resistance < 0){
         cout << "The resistance of the resistor is: " << -(resistance) << "ohms" << endl;
         cout << "Since resistance cannot be negative, please check the direction of current and voltage applied." << endl;
